@@ -12,12 +12,12 @@ feature "test subdomain" do
   end
 
   scenario "shows a page with subdomain with no js" do
-    visit "http://admin.example.com/"
+    visit "http://admin.lvh.me/"
     expect(page).to have_content("Welcome Admin") # PASS
   end
 
   scenario "shows a page with subdomain with js", js: true do
-    visit "http://admin.example.com/"
+    visit "http://admin.lvh.me/"
     expect(page).to have_content("Welcome Admin") # FAIL
   end
 end

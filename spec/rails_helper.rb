@@ -55,5 +55,5 @@ end
 Capybara.javascript_driver = :webkit
 
 Capybara::Webkit.configure do |config|
-  config.allow_url("admin.example.com")
+  config.allow_url("admin.lvh.me")
 end
