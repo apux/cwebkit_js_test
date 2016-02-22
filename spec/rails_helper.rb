@@ -48,7 +48,7 @@ RSpec.configure do |config|
   config.infer_spec_type_from_file_location!
 end
 
-Capybara.javascript_driver = :webkit
+Capybara.javascript_driver = :webkit_debug
 
 Capybara::Webkit.configure do |config|
   config.allow_url("admin.example.com")
